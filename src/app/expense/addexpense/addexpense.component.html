@@ -1,0 +1,87 @@
+
+<div class="container">
+<div class="panel panel-default " style="max-width:540px;margin-left:auto; margin-right:auto;">
+  <div class="panel-heading" style="font-size:18px;">Expense</div>
+  <div  class="panel-body">
+     
+
+<form #addForm ="ngForm" class="form-horizontal" (ngSubmit)="addExpense(addForm.value)">
+<fieldset>
+
+<!-- Form Name -->
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="amount" >Amount</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="amount" (ngModel)="amount" type="text" placeholder="placeholder" class="form-control input-md" required>
+  
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="expensedate">Date</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="expensedate" (ngModel)="expensedate" type="date" placeholder="placeholder" class="form-control input-md" required>
+ 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="description" >Description</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="desc" (ngModel)="desc" type="text" placeholder="placeholder" class="form-control input-md" required>
+  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="at" >At@</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="at" (ngModel)="at" type="text" placeholder="placeholder" class="form-control input-md" required>
+  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="paidby" >Paid By</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="paidby" (ngModel)="paidby" type="text" placeholder="placeholder" class="form-control input-md" required>
+  
+  </div>
+</div>
+
+
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="category">Category</label>
+  <div class="col-md-6">
+    <select id="selectbasic" name="category" (ngModel)="category" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+
+ <br/>
+  <div class="col-md-4"></div>
+  <div class="col-md-8">
+     <span (mouseenter)="mouseoverSubmit=true" (mouseleave)="mouseoverSubmit=false">
+    <button id="button1id" name="button1id"  [disabled]="addForm.invalid" class="btn btn-success">Submit</button>
+    </span>
+    <button id="button2id" name="button2id" class="btn btn-danger">Cancel</button>
+  </div>
+
+
+</fieldset>
+</form>
+ 
+  </div>
+</div>
+</div>
+
