@@ -12,7 +12,9 @@ import { AddexpenseComponent } from './expense/addexpense/addexpense.component'
  import { RouterModule } from '@angular/router'
  import { ChartModule } from 'angular2-chartjs';
  import {appRoutes} from './routes'
- import {ShowChartComponent} from './common/charts/showcharts-component'
+ import {ShowChartComponent} from './common/charts/showcharts-component';
+import { TransComponent } from './expense/trans/trans.component';
+import { TransheaderComponent } from './expense/transheader/transheader.component'
  
  export const firebaseConfig={
    apiKey: "AIzaSyCD8HLADVitZWembveJWjxj_24E97ZaLKM",
@@ -30,7 +32,9 @@ import { AddexpenseComponent } from './expense/addexpense/addexpense.component'
     NavComponent,
     ExpenselistComponent,
     ShowChartComponent,
-    AddexpenseComponent
+    AddexpenseComponent,
+    TransComponent,
+    TransheaderComponent
   ],
   imports: [
     BrowserModule,

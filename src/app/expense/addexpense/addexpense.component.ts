@@ -30,7 +30,7 @@ let expense={
   category:formvalues.category,
   desc:formvalues.desc,
   expensedate:formvalues.expensedate,
-  whopaid:formvalues.paidby
+  whopaid:formvalues.whopaid
 }
 this.dataService.addExpense(expense)
 this.router.navigate(['/expenses'])

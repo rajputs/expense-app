@@ -1,7 +1,7 @@
 
 <div class="container">
 <div class="panel panel-default " style="max-width:540px;margin-left:auto; margin-right:auto;">
-  <div class="panel-heading" style="font-size:18px;">Expense</div>
+  <div class="panel-heading" style="font-size:20px;">Expense</div>
   <div  class="panel-body">
      
 
@@ -46,9 +46,9 @@
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="paidby" >Paid By</label>  
+  <label class="col-md-4 control-label" for="whopaid" >Paid By</label>  
   <div class="col-md-6">
-  <input id="textinput" name="paidby" (ngModel)="paidby" type="text" placeholder="placeholder" class="form-control input-md" required>
+  <input id="textinput" name="whopaid" (ngModel)="whopaid" type="text" placeholder="placeholder" class="form-control input-md" required>
   
   </div>
 </div>
@@ -61,8 +61,12 @@
   <label class="col-md-4 control-label" for="category">Category</label>
   <div class="col-md-6">
     <select id="selectbasic" name="category" (ngModel)="category" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+      <option value="Groceries">Groceries</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Rent">Rent</option>
+      <option value="Utilities">Utilities</option>
+      <option value="Beverages">Beverages</option>
+      <option value="Others">Others</option>
     </select>
   </div>
 </div>

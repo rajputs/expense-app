@@ -8,14 +8,14 @@ import 'rxjs/Rx';
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styles:[`.large-text{
-    font-size:20px;
+    font-size:24px;
     font-weight:bold;
   }`]
  
 })
 export class NavComponent implements OnInit {
  currentDate:Date= new Date()
-  constructor(private expenseService:ExpensedataService, private router :Router) { }
+  constructor(public expenseService:ExpensedataService, public router :Router) { }
  aggregate:any
  interim:any
   ngOnInit() {
