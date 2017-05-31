@@ -5,13 +5,13 @@ import 'rxjs/Rx'
 @Component({
   selector: 'app-expenselist',
   template: `
-  <div class="container" >
+  <!--div class="container" -->
 <div *ngFor="let expense of expenselist"  class="panel panel-default" >
   
   <app-transheader [header]="expense"></app-transheader>
  
 </div>
-</div>
+<!--/div-->
 
 
 

@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
       <span class="ht pull-right">{{transaction?.amount|currency:'AUD':true}}</span>
   </div>
   `,
-     styles: [`.ht{font-size:20px;
+     styles: [`.ht{font-size:15px;
    
 }
 

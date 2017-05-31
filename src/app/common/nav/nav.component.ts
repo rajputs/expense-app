@@ -7,9 +7,9 @@ import 'rxjs/Rx';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styles:[`.large-text{
-    font-size:24px;
-    font-weight:bold;
+  styles:[`.large-text1{
+    font-size1:24px;
+    font-weight1:bold;
   }`]
  
 })

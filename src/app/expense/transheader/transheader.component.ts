@@ -13,10 +13,10 @@ import { Component, OnInit ,Input} from '@angular/core';
   
   
   `,
-    styles: [`.ht{font-size:22px;
+    styles: [`.ht{font-size:14px;
     font-weight:bold;
 }
-.mid-pos{max-width:500px;
+.mid-pos{max-width:400px;
   
 margin-left:auto;
 margin-right:auto},
@@ -28,12 +28,15 @@ ht1{font:size:10px;
 })
 export class TransheaderComponent implements OnInit {
 
+
+
   constructor() { }
 
    today:any= new Date().getTime()
     timefactor=1000*60*60*24
 @Input() header:any
   ngOnInit() {
+    console.log(this.header)
   }
   
   getDaysFromNow(datestring){
